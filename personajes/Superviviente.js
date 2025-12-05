@@ -24,4 +24,5 @@ class Jugador extends Personaje {
     }
 }
 
+
 export default Jugador;

@@ -33,27 +33,27 @@ Combatir ->
 Buscar por habitacion ->
     Si no hay zombies en la habitacion
     - Tirar un dado de 1 a 100 ->
-        - 1-75 Haces ruido
-        - 76-90 Encuentras un botiquin (si ya tienes 1 botiquin lo pierdes)
-        - 91-95 Encuentras proteccion (se acumula)
-        - 96-100 Encuentras un arma (se acumula)
+        - 1-75 Haces ruido --
+        - 76-90 Encuentras un botiquin (si ya tienes 1 botiquin lo pierdes) --
+        - 91-95 Encuentras proteccion (se acumula) --
+        - 96-100 Encuentras un arma (se acumula) --
     - Si haces ruido en el anterior ->
-        - 1-40 No pasa nada
-        - 41-80 +1 zombie en la habitacion
-        - 81-100 +2 zombies en la habitacion
-    Igualmente reducir nº intentos busqueda en la habitacion
+        - 1-40 No pasa nada --
+        - 41-80 +1 zombie en la habitacion --
+        - 81-100 +2 zombies en la habitacion --
+    Igualmente reducir nº intentos busqueda en la habitacion --
 
 Avanzar de habitacion/ Salir ->
     - Disponible si no hay mas zombies en la habitacion
     - Al pasar de habitacion ->
-        - Siempre habrá un solo zombie
-        - Puedes hacer 3 busquedas
-        - Nº de habitacion actual avanza
+        - Siempre habrá un solo zombie --
+        - Puedes hacer 3 busquedas  --
+        - Nº de habitacion actual avanza --
     - Mostrar salir de la mansion o avanzar respectivamente
     - Curarse ->
-        - Disponible si no hay mas zombies
-        - Cura 4 de vida máximo al jugador
-        - Dar la opcion de curar aunque tenga la vida al máximo
+        - Disponible si no hay mas zombies 
+        - Cura 4 de vida máximo al jugador --
+        - Dar la opcion de curar aunque tenga la vida al máximo --
 
 FIN del juego ->
     - Si el jugador no le quedan más puntos de vida: GAME OVER

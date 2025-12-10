@@ -1,3 +1,5 @@
+import Personaje from "./Personaje.js";
+
 class Superviviente extends Personaje {
     constructor(nombre, salud, ataque) {
         super(nombre, salud, ataque);
@@ -7,8 +9,10 @@ class Superviviente extends Personaje {
         this.busquedas = 3;
     }
 
-    añadirBotiquin() { if (this.botiquines < 1) { this.botiquines += 1; } }
+    // Añade un botiquin al inventario
+    añadirBotiquin() { this.botiquines = 1; }
 
+    // Usa un botiquin para curarse
     usarBotiquin() {
         if (this.botiquines > 0) {
             this.salud += 4;
@@ -16,17 +20,17 @@ class Superviviente extends Personaje {
                 this.salud = this.saludMax;
             }
             this.botiquines -= 1;
+            alert("Te has curado, ahora tienes: " + this.salud);
         } else {
             alert("No tienes botiquines disponibles");
         }
     } 
 
     añadirProteccion() { this.protecciones += 1; }
-
     añadirArma() { this.armas += 1; }
-
     establecerBusquedas(num) { this.busquedas = num; }
 
+    // Recibe daño segun las protecciones
     recibirDanio(danio) {
         let danioFinal = danio - this.protecciones;
         if (danioFinal < 0) {
